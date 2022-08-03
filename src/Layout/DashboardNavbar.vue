@@ -33,7 +33,7 @@
                      tag="li"
                      title-tag="a"
                      title-classes="nav-link pr-0">
-        <a href="#" class="nav-link pr-0" @click.prevent slot="title-container">
+        <a href="#" class="nav-link pr-0" @click.prevent>
           <b-media no-body class="align-items-center">
                   <span class="avatar avatar-sm rounded-circle">
                     <img alt="Image placeholder" src="img/theme/team-4.jpg">
@@ -77,14 +77,10 @@
   </base-nav>
 </template>
 <script>
-import { CollapseTransition } from 'vue2-transitions';
-import { BaseNav, Modal } from '@/components';
 
 export default {
   components: {
-    CollapseTransition,
-    BaseNav,
-    Modal
+
   },
   props: {
     type: {

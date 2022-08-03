@@ -33,3 +33,8 @@ body{
 		color: #fff;
 }
 </style>
+
+<script>
+export default {
+}
+</script>

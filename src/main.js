@@ -17,6 +17,10 @@ const routes = [
     {
     path: '/home',
       component: () => import('../src/views/Home'),
+    },
+    {
+    path: '/layout',
+      component: () => import('../src/Layout/Index'),
     }
 
 ]
