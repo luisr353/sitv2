@@ -2,7 +2,6 @@
 <div id="app">
   <router-view></router-view>
 </div>
-   
 </template>
 
 <style>
@@ -25,5 +24,12 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+body{
+		display: flex;
+		flex-direction:column;
+		justify-content:center;
+		color: #fff;
 }
 </style>
