@@ -1,6 +1,25 @@
 import { createApp } from 'vue'
+import { createRouter, createWebHashHistory } from 'vue-router'
+import App from './App.vue'
 
-import App from "./App.vue";
-import router from "./router";
+//rutas
+const routes = [
+    {
+    path: '/',
+      component: () => import('../src/views/Login'),
+    }
+]
 
-createApp(App).use(router).mount('#app')
+//crear objeto de rutas
+
+const router = createRouter({
+    history: createWebHashHistory(),
+    routes
+})
+
+//instancia de vue
+const app = createApp(App)
+
+app.use(router)
+
+.mount('#app')
